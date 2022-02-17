@@ -6,6 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- For Internal CSS Id -->
+    <style>
+        #id-form{
+            border: 5px solid blue;
+            width: 190px;
+        }
+    </style>
+    <!-- For Internal CSS Class -->
+    <style>
+        .class-form{
+            border: 5px solid green;
+            width: 190px;
+        }
+    </style>
   </head>
   <body>
     <!--Heading-->
@@ -54,12 +68,14 @@
       <li>Second item on ordered list</li>
       <li>Third item on ordered list</li>
     </ol>
+    <br />
 
     <!-- Unordered List -->
     <ul>
       <li>One item on unordered list</li>
       <li>Another item on unordered list</li>
     </ul>
+    <br />
 
     <!-- Nested List -->
     <ul>
@@ -75,6 +91,7 @@
       </ul>
       <li>The other another item on unordered list</li>
     </ul>
+    <br />
 
     <!-- Table -->
     <table border="1px" cellpadding="5px" cellspacing="2px">
@@ -110,5 +127,73 @@
         <td>R4C4 Data</td>
       </tr>
     </table>
+    <br />
+
+    <!-- Input Tag -->
+    <input type="text" placeholder="text1" />
+    <input type="text" placeholder="text2" /> <br /><br />
+
+    <!-- Form Tag -->
+    <form action="/login.php">
+      <label> Enter Text </label>
+      <input type="text" placeholder="Form text1" required />
+      <br />
+      <label> Enter Text </label>
+      <input type="text" placeholder="Form text2" />
+      <br />
+      <label> Radio1 </label>
+      <input type="radio" placeholder="radio1" />
+      <label> Radio2 </label>
+      <input type="radio" placeholder="radio2" />
+      <br />
+      <label>Label for checkboxes</label>
+      <br />
+      <input type="checkbox" /> First checkbox <input type="checkbox" /> Second
+      checkbox <input type="checkbox" /> Third checkbox
+      <br />
+      <label>Label for dropdown</label>
+      <select>
+        <option value="1" selected="true">Default option</option>
+        <option>Another option</option>
+        <option>Next option</option>
+      </select>
+      <br />
+      <input type="submit" />
+    </form>
+
+    <h1>We are starting CSS</h1>
+
+  <!-- Inline CSS -->
+  <form
+    action="/login.php"
+    style="border: 10px solid red; width: 250px; height: 50px"
+  >
+    <label> Enter Text </label>
+    <input type="text" placeholder="Form text1" required />
+    <br />
+    <input type="submit" />
+  </form>
+
+  <!-- Internal CSS by id -->
+  <form
+    action="/login.php"
+    id="id-form"
+  >
+    <label> Enter Text </label>
+    <input type="text" placeholder="Form text1" required />
+    <br />
+    <input type="submit" />
+  </form>
+
+   <!-- Internal CSS by class -->
+   <form
+   action="/login.php"
+   class="class-form"
+ >
+   <label> Enter Text </label>
+   <input type="text" placeholder="Form text1" required />
+   <br />
+   <input type="submit" />
+ </form>
   </body>
 </html>
